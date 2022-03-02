@@ -18,7 +18,6 @@
   margin: 70px auto 40px auto;
   flex-direction: column;
   display: flex;
-  margin: auto;
   width: 70%;
 }
 .grid .gridrows {
