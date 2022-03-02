@@ -1,0 +1,158 @@
+.sectiondiv {
+  margin-right: 2.813rem;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  width: 80%;
+}
+.sectiondiv img {
+  margin-left: 1.563rem;
+}
+.aboutme h1 {
+  margin-top: 1rem;
+}
+.sectiondiv .aboutme {
+  text-align: center;
+}
+.grid {
+  margin: 70px auto 40px auto;
+  flex-direction: column;
+  display: flex;
+  margin: auto;
+  width: 70%;
+}
+.grid .gridrows {
+  margin-bottom: 30px;
+  text-align: center;
+  height: 196px;
+}
+.grid .gridrows p {
+  font-size: 1.875rem;
+}
+main {
+  background: url(milky\ way.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 92vh;
+  width: 100%;
+}
+.navlinks li {
+  display: none;
+}
+.sociallinks li a i {
+  display: none;
+}
+ul {
+  justify-content: center;
+  display: flex;
+}
+#bar {
+  display: inline-block;
+  position: absolute;
+  right: 1.25rem;
+  color: white;
+  top: 1.313rem;
+}
+.pngp {
+  bottom: 155px;
+}
+.png {
+  bottom: 85px;
+}
+#menuToggle {
+  -webkit-user-select: none;
+  position: absolute;
+  user-select: none;
+  display: block;
+  z-index: 1;
+  left: 22px;
+  top: 22px;
+}
+#menuToggle a {
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+#menuToggle input {
+  -webkit-touch-callout: none;
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  height: 33px;
+  width: 33px;
+  left: -1px;
+  opacity: 0;
+  z-index: 2;
+  top: -5px;
+}
+#menuToggle span {
+  transform-origin: 4px 0px;
+  background: white;
+  margin-bottom: 5px;
+  position: relative;
+  border-radius: 3px;
+  display: block;
+  width: 27.5px;
+  height: 3.3px;
+  z-index: 1;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span {
+  transform: rotate(45deg) translate(-2px, 1px);
+  background: white;
+  opacity: 1;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  transform: rotate(0deg) scale(0.2, 0.2);
+  opacity: 0;
+}
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -2px);
+}
+#menu {
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  -webkit-font-smoothing: antialiased;
+  font-family: "Oswald", sans-serif;
+  transform: translate(-100%, 0);
+  padding: 0px 50px 0px 50px;
+  margin: -50px 0 0 -8px;
+  transform-origin: 0% 0%;
+  list-style-type: none;
+  position: absolute;
+  background: black;
+  height: 61px;
+  width: 280px;
+}
+#menu li {
+  font-size: 18px;
+  padding: 10px 0;
+}
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+.maincontact div img {
+  width: 80px;
+  top: 250px;
+}
+.maincontact div p {
+  margin-left: 100px;
+}
+.maincontact div h1 {
+  margin-left: 100px;
+}
+#home {
+  position: absolute;
+  left: 110px;
+}
+#contact {
+  position: absolute;
+  left: 190px;
+}

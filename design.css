@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: black;
+  width: 100%;
+}
+main {
+  background: url(milky\ way.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 88vh;
+  width: 100%;
+}
+ul {
+  justify-content: space-around;
+  padding: 6px 0px 6px 0px;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+.logo a {
+  font-family: "Bad Script", cursive;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  font-size: 1.375rem;
+  color: white;
+}
+ul li {
+  flex-direction: row;
+  display: flex;
+}
+.navlinks {
+  flex-direction: row;
+  display: flex;
+}
+.navlinks li a {
+  font-family: "Oswald", sans-serif;
+  margin: 0rem 1rem 0rem 1rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+.sociallinks li a i:visited {
+  color: white;
+}
+.sociallinks li a i {
+  color: white;
+}
+.mainimg {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.box {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  max-width: 250px;
+  min-width: 250px;
+  left: 50%;
+  top: 42%;
+}
+.boxcontent {
+  font-family: "Oswald", sans-serif;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  color: white;
+  display: flex;
+  width: 100%;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+}
+.box::after {
+  background: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  display: block;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+}
+.boxcontent h1 {
+  margin: 0px auto 8px auto;
+  padding: 0px 0px 4px 0px;
+  letter-spacing: 0.2px;
+  background: black;
+  font-size: 20px;
+  width: 120px;
+}
+.boxcontent p {
+  letter-spacing: 0.2px;
+  font-size: 18px;
+}
+.line {
+  border-left: 6px solid white;
+  position: absolute;
+  bottom: 4.688rem;
+  height: 3.125rem;
+  left: 50%;
+}
+.png {
+  transform: translatex(-50%);
+  filter: invert(100%);
+  position: absolute;
+  bottom: 35px;
+  width: 45px;
+  left: 50%;
+}
+.pngp {
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translatex(-50%);
+  position: absolute;
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
+  bottom: 100px;
+  left: 50%;
+}
+.footer {
+  background: black;
+  height: 6.25rem;
+  width: 100%;
+}
+.footer li {
+  list-style-type: none;
+  font-size: 1.125rem;
+  text-align: center;
+  padding-top: 5px;
+  color: white;
+}
+.footer li i {
+  margin: 0.938rem 0.313rem 0rem 0.313rem;
+}
+.footer li a i:visited {
+  color: white;
+}
+.footer li a i {
+  color: white;
+}
+.footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  color: white;
+}
+.section {
+  background: rgba(247, 247, 247, 0.8);
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  width: 100%;
+}
+.sectiondiv {
+  display: flex;
+  margin: auto;
+  width: 60%;
+}
+.aboutme {
+  margin-left: 1.25rem;
+}
+.section img {
+  border-radius: 2%;
+  height: 200px;
+}
+.aboutme h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.4px;
+  font-size: 1.5rem;
+}
+.aboutme .p1 {
+  font-family: "Zilla Slab", serif;
+  letter-spacing: 0.4px;
+  font-size: 1.125rem;
+  word-spacing: 0.5px;
+  margin-top: 0.5rem;
+}
+.aboutme h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.4px;
+  margin-top: 1rem;
+  font-size: 17px;
+}
+.aboutme .p2 {
+  font-family: "Zilla Slab", serif;
+  letter-spacing: 0.4px;
+  font-size: 1.063rem;
+  word-spacing: 0.5px;
+  margin-top: 0.5rem;
+}
+#aboutmescroll {
+  transition-duration: 3s;
+}
+.grid {
+  grid-template-columns: 20% 20% 20% 20%;
+  margin: 80px 0px 80px 0px;
+  justify-content: center;
+  grid-column-gap: 25px;
+  position: relative;
+  display: grid;
+}
+.gridrows {
+  background: linear-gradient(#12c2e9, #c471ed, #f64f59);
+  font-family: "Oswald", sans-serif;
+  justify-content: center;
+  letter-spacing: 0.4px;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  height: 340px;
+  display: flex;
+}
+#bar {
+  cursor: pointer;
+  display: none;
+}
+#footericonslinkedin {
+  margin-right: 15px;
+  font-size: 20px;
+}
+#footericonsmail {
+  font-size: 20px;
+}
+#headericonslinkedin {
+  margin-right: 20px;
+  font-size: 25px;
+}
+#headericonsmail {
+  font-size: 25px;
+}
+#menuforphone {
+  display: none;
+}
